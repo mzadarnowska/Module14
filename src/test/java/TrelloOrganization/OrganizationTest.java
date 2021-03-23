@@ -14,9 +14,6 @@ import static io.restassured.RestAssured.given;
 
 public class OrganizationTest {
 
-    //protected static String KEY = "7e6606fb2518eab25ca36a4303affa62";
-    //protected static String TOKEN = "58b045a9bb0cd922aea7482d193bee5099c2a352a2f2341950f2c5137f17aa88";
-
     String KEY = System.getProperty("key");
     String TOKEN = System.getProperty("token");
 
@@ -45,6 +42,4 @@ public class OrganizationTest {
                 .then()
                 .statusCode(HttpStatus.SC_BAD_REQUEST);
     }
-
-
 }
